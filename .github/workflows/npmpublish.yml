@@ -32,7 +32,7 @@ jobs:
         run: bun install
 
       - name: 🏗️ Build
-        run: bun build src/index.js --target=bun --format=esm --minify --outfile=bin/index.js --external=typescript
+        run: bun build src/index.js --target=bun --format=esm --minify --outfile=bin/index.js
       
       - name: 🚀 Publish
         run: npm publish
